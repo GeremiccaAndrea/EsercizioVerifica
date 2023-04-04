@@ -11,6 +11,6 @@ def areaRettangolo():
     altezza = int(request.args.get('altezza'))
     area = base * altezza
     return render_template('risultato_uno_1.html', base = base, altezza = altezza, area = area)
-
+    
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=3245, debug=True)
